@@ -364,6 +364,17 @@ nav {
 /* ПОРТФОЛИО */
 
 /* Buttons */
+
+.filter-buttons {
+  width: 611px;
+  align-items: center;
+}
+
+.filter-button-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .filter-button {
   color: var(--primary-white-color);
   background: #2196f3;
