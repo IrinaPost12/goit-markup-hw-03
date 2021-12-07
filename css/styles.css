@@ -423,7 +423,6 @@ nav {
   box-sizing: border-box;
   width: 370px;
   background: var(--primary-white-color);
-  border: 1px solid #eeeeee;
 }
 .project-list > .project-item {
   margin-right: 30px;
@@ -439,20 +438,15 @@ nav {
   margin-bottom: 0px;
 }
 
-.project-name,
-.project-about {
-  justify-content: flex-start;
-  flex-basis: 322px;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.project-about {
-  padding-bottom: 20px;
+.project-info {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .project-name {
-  margin-top: 20px;
+  margin-bottom: 4px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -461,7 +455,6 @@ nav {
 }
 
 .project-about {
-  margin-top: 4px;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
@@ -471,8 +464,6 @@ nav {
 .project-image {
   box-sizing: border-box;
   display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 /* Buttons - состояния */
