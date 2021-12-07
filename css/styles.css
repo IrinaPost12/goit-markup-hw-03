@@ -16,6 +16,7 @@
   --accent-color: #2196f3;
   --hero-background-color: #2f303a;
   --grey-background-color: #f5f4fa;
+  --border: 1px solid #eeeeee;
 }
 
 body {
@@ -103,13 +104,8 @@ nav {
 
 .site-nav-link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+
   color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 
 .current {
@@ -126,9 +122,14 @@ nav {
 }
 
 .address-nav-link {
+  color: var(--primary-text-color);
+}
+
+.site-nav-link,
+.address-nav-link {
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--primary-text-color);
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -177,7 +178,7 @@ nav {
 .hero-button {
   margin-bottom: 200px;
   color: var(--primary-white-color);
-  background: #2196f3;
+  background: var(--accent-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -233,6 +234,7 @@ nav {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
 .advantages .advantages-item + .advantages-item {
   margin-left: 30px;
 }
@@ -295,14 +297,15 @@ nav {
   margin-top: 30px;
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 .team-role {
   margin-top: 10px;
   margin-bottom: 30px;
+}
+
+.team-list-title,
+.team-role {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -344,26 +347,20 @@ nav {
 
 .footer-address {
   color: var(--primary-white-color);
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
-.footer-mail {
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
+.footer-mail,
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
+}
+
+.footer-address,
+.footer-mail,
+.footer-tel {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  font-style: normal;
 }
 
 /* ПОРТФОЛИО */
@@ -389,13 +386,7 @@ nav {
   border-radius: 4px;
   background: var(--grey-background-color);
   color: var(--primary-white-color);
-  background: #2196f3;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  cursor: pointer;
+  background: var(--accent-color);
 }
 
 .filter-button-off {
@@ -404,6 +395,10 @@ nav {
   background: var(--grey-background-color);
   color: var(--title-text-color);
   font-family: inherit;
+}
+
+.filter-button,
+.filter-button-off {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -411,6 +406,7 @@ nav {
   letter-spacing: 0.03em;
   cursor: pointer;
 }
+
 /* Список проектов */
 
 .project {
@@ -444,9 +440,9 @@ nav {
 
 .project-info {
   padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border-right: var(--border);
+  border-bottom: var(--border);
+  border-left: var(--border);
 }
 
 .project-name {
