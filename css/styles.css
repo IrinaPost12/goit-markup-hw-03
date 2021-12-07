@@ -15,6 +15,7 @@
   --primary-white-color: #ffffff;
   --accent-color: #2196f3;
   --hero-background-color: #2f303a;
+  --grey-background-color: #f5f4fa;
 }
 
 body {
@@ -264,7 +265,7 @@ nav {
   padding-top: 94px;
   padding-bottom: 94px;
 
-  background: #f5f4fa;
+  background: var(--grey-background-color);
 }
 
 .team-section-title {
@@ -365,17 +366,24 @@ nav {
 
 /* Buttons */
 
-.filter-buttons {
-  width: 611px;
-  align-items: center;
-}
-
 .filter-button-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.filter-button-item {
+  border-radius: 4px;
+  background: var(--grey-background-color);
 }
 
+.filter-button-list .filter-button-item + .filter-button-item {
+  margin-left: 8px;
+}
 .filter-button {
+  border: transparent;
+  border-radius: 4px;
+  background: var(--grey-background-color);
   color: var(--primary-white-color);
   background: #2196f3;
   font-weight: 500;
@@ -387,6 +395,9 @@ nav {
 }
 
 .filter-button-off {
+  border: transparent;
+  border-radius: 4px;
+  background: var(--grey-background-color);
   color: var(--title-text-color);
   font-family: inherit;
   font-weight: 500;
@@ -396,9 +407,52 @@ nav {
   letter-spacing: 0.03em;
   cursor: pointer;
 }
-/* Наши проекты */
+/* Список проектов */
+
+.project {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  box-sizing: border-box;
+  width: 370px;
+  background: var(--primary-white-color);
+  border: 1px solid #eeeeee;
+}
+.project-list > .project-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc(100% / 3 - 60px);
+}
+
+.project-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.project-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+.project-name,
+.project-about {
+  justify-content: flex-start;
+  flex-basis: 322px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.project-about {
+  padding-bottom: 20px;
+}
 
 .project-name {
+  margin-top: 20px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -407,10 +461,18 @@ nav {
 }
 
 .project-about {
+  margin-top: 4px;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.project-image {
+  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Buttons - состояния */
