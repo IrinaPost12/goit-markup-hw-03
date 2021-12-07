@@ -148,6 +148,10 @@ nav {
   color: var(--accent-color);
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 /* Герой */
 
 .hero-section {
