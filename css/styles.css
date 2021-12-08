@@ -29,11 +29,10 @@ a {
   text-decoration: none;
 }
 
-.list {
+ul {
   padding: 0;
   margin: 0;
   list-style: none;
-  text-decoration: none;
 }
 
 h1,
@@ -52,6 +51,11 @@ p {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 nav {
@@ -155,7 +159,8 @@ nav {
 
 /* Герой */
 
-.hero-section {
+.hero {
+  padding: 200px 0;
   width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -166,7 +171,6 @@ nav {
 
 .hero-title {
   margin-bottom: 30px;
-  padding: 200px 452px 30px 452px;
   color: var(--primary-white-color);
   text-align: center;
   font-weight: 900;
@@ -176,7 +180,6 @@ nav {
   text-transform: uppercase;
 }
 .hero-button {
-  margin-bottom: 200px;
   color: var(--primary-white-color);
   background: var(--accent-color);
   font-family: inherit;
@@ -202,11 +205,6 @@ nav {
   clip: rect(0 0 0 0);
 }
 
-.advantages-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .advantages-title {
   margin-bottom: 10px;
   color: var(--title-text-color);
@@ -217,7 +215,7 @@ nav {
   text-transform: uppercase;
 }
 
-.advantages-section .list {
+.advantages {
   display: flex;
   font-size: 14px;
   line-height: 1.71;
@@ -241,8 +239,7 @@ nav {
 
 /* Чем мы занимаемся */
 .we-do-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 0%;
 }
 
 .we-do-section-title {
@@ -257,20 +254,14 @@ nav {
   margin-left: 30px;
 }
 
-.we-do-image {
+.img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Наша команда */
 .team-section {
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background: var(--grey-background-color);
 }
 
@@ -293,15 +284,19 @@ nav {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-about {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
 .team-list-title {
-  margin-top: 30px;
   color: var(--title-text-color);
   font-weight: 500;
 }
 
 .team-role {
   margin-top: 10px;
-  margin-bottom: 30px;
 }
 
 .team-list-title,
@@ -317,13 +312,9 @@ nav {
 
 /* Footer */
 .footer-section {
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
   background: #2f303a;
-  justify-content: flex-start;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -336,12 +327,11 @@ nav {
   letter-spacing: 0.03em;
 }
 
-.address-section {
+.footer {
   margin-top: 20px;
-  padding-bottom: 60px;
 }
 
-.footer:not(:last-child) {
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -370,7 +360,6 @@ nav {
 .filter-button-list {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 50px;
 }
 .filter-button-item {
@@ -382,6 +371,7 @@ nav {
   margin-left: 8px;
 }
 .filter-button {
+  padding: 6px 22px;
   border: transparent;
   border-radius: 4px;
   background: var(--grey-background-color);
@@ -390,6 +380,7 @@ nav {
 }
 
 .filter-button-off {
+  padding: 6px 22px;
   border: transparent;
   border-radius: 4px;
   background: var(--grey-background-color);
